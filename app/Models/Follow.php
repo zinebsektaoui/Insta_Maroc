@@ -5,12 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Comment extends Model
+class Follow extends Model
 {
     protected $fillable = [
         'user_id',
-        'post_id',
-        'content',
+        'following_id',
     ];
 
     public function user(): BelongsTo
@@ -18,8 +17,8 @@ class Comment extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function post(): BelongsTo
+    public function following(): BelongsTo
     {
-        return $this->belongsTo(Post::class);
+        return $this->belongsTo(User::class, 'following_id');
     }
-} 
+}

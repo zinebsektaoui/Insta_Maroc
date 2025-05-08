@@ -35,7 +35,7 @@ class PostController extends Controller
 
         auth()->user()->posts()->create([
             'caption' => $data['caption'],
-            'image_path' => $imagePath,
+            'image' => $imagePath,
         ]);
 
         return redirect('/profile/' . auth()->user()->id);

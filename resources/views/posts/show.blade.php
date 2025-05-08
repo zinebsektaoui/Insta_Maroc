@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8">
-            <img src="{{ asset('storage/' . $post->image_path) }}" class="w-100">
+            <img src="{{ asset('storage/' . $post->image) }}" class="w-100">
         </div>
         <div class="col-md-4">
             <div class="d-flex align-items-center mb-3">
@@ -77,7 +77,7 @@
                         @else
                             <strong class="me-2">Deleted User</strong>
                         @endif
-                        <p class="mb-0">{{ $comment->comment }}</p>
+                        <p class="mb-0">{{ $comment->content }}</p>
                         
                         @if(auth()->id() === $comment->user_id || auth()->id() === $post->user_id)
                             <form action="{{ route('comments.destroy', $comment->id) }}" method="POST" class="ms-auto">

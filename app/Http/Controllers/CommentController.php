@@ -20,7 +20,7 @@ class CommentController extends Controller
         ]);
 
         $post->comments()->create([
-            'comment' => $data['comment'],
+            'content' => $data['comment'],
             'user_id' => auth()->id(),
         ]);
 
