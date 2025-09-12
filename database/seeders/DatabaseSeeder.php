@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
 
         User::factory()->create([
             'name' => 'Test User',
+            'username' => 'testuser', // <-- ADD THIS LINE
             'email' => 'test@example.com',
         ]);
     }
